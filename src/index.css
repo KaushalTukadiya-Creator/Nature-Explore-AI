@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 45% 98%;
+    --foreground: 120 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 15% 15%;
+
+    --primary: 142 72% 29%;
+    --primary-foreground: 120 60% 98%;
+
+    --secondary: 120 20% 94%;
+    --secondary-foreground: 120 50% 20%;
+
+    --muted: 120 15% 95%;
+    --muted-foreground: 120 10% 45%;
+
+    --accent: 40 50% 92%;
+    --accent-foreground: 35 60% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 120 15% 88%;
+    --input: 120 15% 88%;
+    --ring: 142 72% 29%;
+
+    --radius: 0.85rem;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #1c271f;
+  background-color: #fdfbf7;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+/* Custom Nature Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4eee5;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd7cb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7e9d7e;
+}
+
+/* Subtle botanical textured background pattern */
+.bg-nature-grid {
+  background-image: radial-gradient(rgba(34, 197, 94, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
